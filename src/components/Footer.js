@@ -1,36 +1,35 @@
-import { useContext } from "react";
-import { State } from "../context/stateContext";
 
 export default function Footer() {
-  const { name, email, website, phone, bankAccount, bankName } =
-    useContext(State);
 
   return (
     <>
       <footer className="footer border-t-2 border-gray-300 pt-5">
-        <ul className="flex flex-wrap items-center justify-center">
+        <ul className="grid grid-cols-3 gap-2 justify-center">
           <li>
-            <span className="font-bold">Your name:</span> {name}
+            <p>Company Name:</p>
+            <p className="font-bold">Royal Studio</p>
           </li>
           <li>
-            <span className="font-bold">Your email:</span> {email}
+            <p >Email:</p>
+            <span className="font-bold">royalstudio089@gmail.com</span>
           </li>
           <li>
-            <span className="font-bold">Phone number:</span> {phone}
+            <p>Phone number:</p>
+            <span className="font-bold">+92-308-4877073</span>
           </li>
           <li>
-            <span className="font-bold">Bank:</span> {bankName}
+            <span className="font-bold">Bank:</span>
           </li>
           <li>
-            <span className="font-bold">Account holder:</span> {name}
+            <span className="font-bold">Account holder:</span>
           </li>
           <li>
-            <span className="font-bold">Account number:</span> {bankAccount}
+            <span className="font-bold">Account number:</span>
           </li>
           <li>
             <span className="font-bold">Website:</span>{" "}
-            <a href={website} target="_blank" rel="noopenner noreferrer">
-              {website}
+            <a href="https://www.instagram.com/royalstudio089/" target="_blank" rel="noopenner noreferrer">
+              https://www.instagram.com/royalstudio089/
             </a>
           </li>
         </ul>
@@ -39,12 +38,12 @@ export default function Footer() {
       <p className="text-center px-5 mt-8 text-xs ">
         Invoicer is built by{" "}
         <a
-          href="https://tsbsankara.com"
+          href="https://www.instagram.com/royalstudio089/"
           target="_blank"
           rel="noreferrer"
           className="underline"
         >
-          Thomas Sankara
+          Royal Studio
         </a>
       </p>
     </>

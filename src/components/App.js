@@ -8,25 +8,24 @@ import Notes from "./Notes";
 import Table from "./Table";
 import TableForm from "./TableForm";
 import ReactToPrint from "react-to-print";
-import { DonateButton } from "../buttons";
 import { State } from "../context/stateContext";
 
 function App() {
   const {
-    name,
-    setName,
-    address,
-    setAddress,
-    email,
-    setEmail,
-    phone,
-    setPhone,
-    bankName,
-    setBankName,
-    bankAccount,
-    setBankAccount,
-    website,
-    setWebsite,
+    // name,
+    // setName,
+    // address,
+    // setAddress,
+    // email,
+    // setEmail,
+    // phone,
+    // setPhone,
+    // bankName,
+    // setBankName,
+    // bankAccount,
+    // setBankAccount,
+    // website,
+    // setWebsite,
     clientName,
     setClientName,
     clientAddress,
@@ -54,7 +53,7 @@ function App() {
         <section>
           <div className="bg-white p-5 rounded shadow">
             <div className="flex flex-col justify-center">
-              <article className="md:grid grid-cols-2 gap-10">
+              {/* <article className="md:grid grid-cols-2 gap-10">
                 <div className="flex flex-col">
                   <label htmlFor="name">Your full name</label>
                   <input
@@ -82,8 +81,8 @@ function App() {
                     onChange={(e) => setAddress(e.target.value)}
                   />
                 </div>
-              </article>
-
+              </article> */}
+              {/* 
               <article className="md:grid grid-cols-3 gap-10">
                 <div className="flex flex-col">
                   <label htmlFor="email">Enter your email</label>
@@ -126,9 +125,9 @@ function App() {
                     onChange={(e) => setPhone(e.target.value)}
                   />
                 </div>
-              </article>
+              </article> */}
 
-              <article className="md:grid grid-cols-2 gap-10">
+              {/* <article className="md:grid grid-cols-2 gap-10">
                 <div className="flex flex-col">
                   <label htmlFor="bankName">Enter your bank name</label>
                   <input
@@ -158,11 +157,11 @@ function App() {
                     onChange={(e) => setBankAccount(e.target.value)}
                   />
                 </div>
-              </article>
+              </article> */}
 
               <article className="md:grid grid-cols-2 gap-10 md:mt-16">
                 <div className="flex flex-col">
-                  <label htmlFor="clientName">Enter your client's name</label>
+                  <label htmlFor="clientName">Client's Name</label>
                   <input
                     type="text"
                     name="clientName"
@@ -177,7 +176,7 @@ function App() {
 
                 <div className="flex flex-col">
                   <label htmlFor="clientAddress">
-                    Enter your client's address
+                    Client's Address
                   </label>
                   <input
                     type="text"
@@ -251,9 +250,6 @@ function App() {
               ></textarea>
             </div>
           </div>
-          <article className="mt-5">
-            <DonateButton />
-          </article>
         </section>
 
         {/* Invoice Preview */}

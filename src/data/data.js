@@ -8,16 +8,6 @@ export const navbar = [
     title: "Home",
     url: "/",
   },
-  {
-    id: uuidv4(),
-    title: "About Invoicer",
-    url: "/about",
-  },
-  {
-    id: uuidv4(),
-    title: "Suggestion Box",
-    url: "/suggestion-box",
-  },
 ];
 
 export const testimonials = [

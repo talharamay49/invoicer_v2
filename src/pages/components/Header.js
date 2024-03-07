@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import AuthContext from "../../context/auth"
 import { navbar } from "../../data/data"
-import { CreateAccount, DonateButton, LogOut } from "../../buttons"
+import { CreateAccount, LogOut } from "../../buttons"
 
 export default function Header() {
   const [links] = useState(navbar)
@@ -27,9 +27,9 @@ export default function Header() {
     <>
       <header className="p-5 flex items-center justify-between xl:max-w-7xl lg:mx-auto 2xl:px-0">
         <div>
-          {/* <h2 className="font-bold text-4xl text-gray-800">
-            <Link to="/">Invoicer</Link>
-          </h2> */}
+          <h2 className="font-bold text-2xl text-gray-800 w-max">
+            Studio Invoicer
+          </h2>
         </div>
 
         <nav className="navbar">
@@ -45,9 +45,6 @@ export default function Header() {
             ))}
 
             <li>{user ? <LogOut /> : <CreateAccount />}</li>
-            <li>
-              <DonateButton />
-            </li>
           </ul>
         </nav>
 

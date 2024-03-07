@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { CreateAccount, LogIn } from "../../buttons"
 
 export default function Footer() {
